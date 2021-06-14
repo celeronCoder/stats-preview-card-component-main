@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+
+$mobile : 375px;
+$desktop : 1440px;
+
+$primary-background : hsl(233, 47%, 7%);
+$primary-card : hsl(244, 38%, 16%);
+$primary-accent : hsl(277, 64%, 61%);
+
+$white : hsl(0, 0%, 100%); // main heading, stats
+$white-pragraph : hsla(0, 0%, 100%, 0.75); // main paragraph
+$white-stat : hsla(0, 0%, 100%, 0.6);
+
+$font-size : 15px;
+$primary-font-family : 'Inter', sans-serif;
+$font-family :  'Lexend Deca', sans-serif;
+
+$font-weight : 400;
+$font-weight-bold : 700;
+
+@mixin flex($align, $justify, $direction) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+	flex-direction: $direction;
+}

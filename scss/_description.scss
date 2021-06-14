@@ -1,0 +1,30 @@
+.description {
+	flex: 0.8;
+	@media (max-width: 1920px) {
+		padding: 0 2rem;
+	}
+	@include flex(center, space-around, column);
+	
+	& #heading {
+		@media (max-width: 1920px) {
+			font-size: 3rem;
+		}
+		text-align: center;
+		font-weight: $font-weight-bold;
+		font-family: $font-family;
+		color: $white;
+
+		& span {
+			color: $primary-accent;
+		}
+	}
+
+	& #text {
+		font-size: $font-size;
+		color: $white-pragraph;
+		transform: translateY(-3em);
+		@media (max-width: 1920px) {
+			padding: 0 6rem 0 2rem;
+		}
+	}
+}
