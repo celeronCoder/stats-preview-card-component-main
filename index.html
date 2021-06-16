@@ -14,6 +14,8 @@
 
 <body>
 	<main>
+		<img class="imgView" src="images/image-header-desktop.jpg">
+		<div class="overlay"></div>
 		<div class="info">
 			<div class="description">
 				<p id="heading">
@@ -39,14 +41,18 @@
 				</div>
 			</div>
 		</div>
-		<img class="imgView" src="images/image-header-desktop.jpg">
-		<div class="overlay"></div>
 	</main>
 
 	<div class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
 		Coded by <a href="#">Khushal</a>.
 	</div>
+
+	<script>
+		if (window.innerHeight === 700) {
+			document.querySelector('imgView').src = '/images/image-header-mobile.jpg'
+		}
+	</script>
 </body>
 
 </html>
